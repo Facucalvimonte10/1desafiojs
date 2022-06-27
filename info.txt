@@ -1,0 +1,1 @@
+En este primer desafío genere un codigo donde se puede ver la tabla del numero que el cliente ingrese, hasta multiplicarse por 20.
