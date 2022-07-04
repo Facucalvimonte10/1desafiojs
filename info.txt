@@ -1,1 +1,6 @@
 En este primer desafío genere un codigo donde se puede ver la tabla del numero que el cliente ingrese, hasta multiplicarse por 20.
+
+
+En el Desafio Entregable, arme un codigo con una función y tres ciclos con la idea de que el alumno ingrese sus notas y le devuelva en
+la consola el resultado del promedio de sus notas y si ese resultado es mayor o igual a 6 estará aprobado, si el resultado es mayor o igual a 5 
+rendira un tema en diciembre, y si el resultado es menor rendira la materia completa en febrero.
