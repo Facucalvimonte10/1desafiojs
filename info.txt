@@ -4,3 +4,9 @@ En este primer desafío genere un codigo donde se puede ver la tabla del numero 
 En el Desafio Entregable, arme un codigo con una función y tres ciclos con la idea de que el alumno ingrese sus notas y le devuelva en
 la consola el resultado del promedio de sus notas y si ese resultado es mayor o igual a 6 estará aprobado, si el resultado es mayor o igual a 5 
 rendira un tema en diciembre, y si el resultado es menor rendira la materia completa en febrero.
+
+En el Desafio Entregable de Arrays, cree un objeto alumno. En ese objeto cree 6 alumnos nuevos. Luego realice dos arrays uno donde me muestra los
+alumnos aprobados, y otro donde me muestra los alumnos desaprobados. Y por ultimo realice un array con el metodo concat para combinar ambos
+arrays y me devuelva la totalidad de estudiantes de la camada 2022. Y al ultimo agregue un ciclo de if y else que tal vez lo pude realizar mejor
+con un do while pero lo intente de esta manera, donde el profesor o el usuario puede ingresar el nombre del alumno y le consola le devolverá 
+la información completa de ese alumno (nombre, edad y nota).

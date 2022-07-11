@@ -9,7 +9,11 @@
 
 //DESAFIO PARA ENTREGAR
 
-let nombreAlumno= prompt("Nombre completo del alumno/a")
+
+
+
+
+/*let nombreAlumno= prompt("Nombre completo del alumno/a")
 let resultado;
 
 function promediar(a,b,c,d) {
@@ -24,4 +28,60 @@ function promediar(a,b,c,d) {
     console.log(`Lo lamento ${nombreAlumno} debes rendir la materia completa en febrero`);
 }
 
-promediar(7,3,4,2);
+promediar(7,3,4,2);*/
+
+
+class Alumno{
+    constructor(nombre,edad,nota){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.nota = nota;
+    }
+
+}
+
+const persona = new Alumno ("Facundo", 19, 6);
+const persona2 = new Alumno ("Fabricio", 20, 7);
+const persona3 = new Alumno ("Candela", 21, 4);
+const persona4 = new Alumno ("Rocio", 20, 2);
+const persona5 = new Alumno ("Franco", 219, 3);
+const persona6 = new Alumno ("Camila", 22, 9);
+
+console.log(persona);
+console.log(persona2);
+console.log(persona3);
+console.log(persona4);
+
+let arrayAlumnosDesaprobados = ["Candela", "Rocio","Franco"];
+console.log(arrayAlumnosDesaprobados);
+
+let arrayAlumnosAprobados = ["Facundo", "Fabricio","Camila"];
+console.log(arrayAlumnosAprobados);
+
+//Cantidad de alumnos en total de la camada 2022
+
+const camadaEstudiantes2022 = arrayAlumnosAprobados.concat(arrayAlumnosDesaprobados);
+console.log(camadaEstudiantes2022);
+
+
+let entrada = prompt("Ingresar nombre del alumno/a que requiere informacion");
+if(entrada == "Candela"){
+    entrada = persona3;
+    console.log(entrada);
+} else if(entrada == "Rocio"){
+    entrada = persona4;
+    console.log(entrada);
+} else if(entrada == "Franco"){
+    entrada = persona5;
+    console.log(entrada);
+}else if(entrada == "Camila"){
+    entrada = persona6;
+    console.log(entrada);
+}else if(entrada == "Fabricio"){
+    entrada = persona2;
+    console.log(entrada);
+} else { entrada == "Facundo"
+    entrada = persona;
+    console.log(entrada);
+}
+   
