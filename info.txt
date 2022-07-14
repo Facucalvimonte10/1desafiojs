@@ -1,12 +1,16 @@
-En este primer desafío genere un codigo donde se puede ver la tabla del numero que el cliente ingrese, hasta multiplicarse por 20.
+//En este primer desafío genere un codigo donde se puede ver la tabla del numero que el cliente ingrese, hasta multiplicarse por 20.
 
 
-En el Desafio Entregable, arme un codigo con una función y tres ciclos con la idea de que el alumno ingrese sus notas y le devuelva en
+//En el Desafio Entregable, arme un codigo con una función y tres ciclos con la idea de que el alumno ingrese sus notas y le devuelva en
 la consola el resultado del promedio de sus notas y si ese resultado es mayor o igual a 6 estará aprobado, si el resultado es mayor o igual a 5 
 rendira un tema en diciembre, y si el resultado es menor rendira la materia completa en febrero.
 
-En el Desafio Entregable de Arrays, cree un objeto alumno. En ese objeto cree 6 alumnos nuevos. Luego realice dos arrays uno donde me muestra los
+//En el Desafio Entregable de Arrays, cree un objeto alumno. En ese objeto cree 6 alumnos nuevos. Luego realice dos arrays uno donde me muestra los
 alumnos aprobados, y otro donde me muestra los alumnos desaprobados. Y por ultimo realice un array con el metodo concat para combinar ambos
 arrays y me devuelva la totalidad de estudiantes de la camada 2022. Y al ultimo agregue un ciclo de if y else que tal vez lo pude realizar mejor
 con un do while pero lo intente de esta manera, donde el profesor o el usuario puede ingresar el nombre del alumno y le consola le devolverá 
 la información completa de ese alumno (nombre, edad y nota).
+
+En la primera pre entrega del proyecto final, con la idea de hacer un ecommerce y vincularlo al trabajo final que tengo ya realizado en 
+la cursada de Desarrollo Web, en este arme una especie de carrito con la idea del after que tuvimos, donde a través del ID del producto puedas
+ir sumando al carrito y que los productos aparezcan en el console log.
