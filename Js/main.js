@@ -85,7 +85,7 @@ if(entrada == "Candela"){
     console.log(entrada);
 }*/
 
-class Producto{
+/*class Producto{
     constructor(id, nombre, precio, categoria){
         this.id = id;
         this.nombre = nombre;
@@ -137,6 +137,49 @@ while (categoria != "salir" && categoria != null){
 
         console.log(productosParaCarro);
     }
+}*/
+
+
+let productos = [];
+let formulario;
+let inputNombre;
+let precioCompra;
+let cantidad;
+
+class Producto{
+    constructor(nombre, precioCompra, cantidad){
+        this.nombre = nombre;
+        this.precio = precioCompra;
+        this.cantidad = cantidad;
+    }
 }
 
-   
+function inicializarElementos(){
+    formulario = document.getElementById("formulario");
+    inputNombre = document.getElementById("nombre");
+    precioCompra = document.getElementById("precioCompra");
+    cantidad = document.getElementById("cantidad");
+  
+}
+
+inicializarElementos();
+
+//let formulario = document.getElementById("formulario");
+formulario.onsubmit = (e) => {
+    e.preventDefault();
+    let productoUsuario = new Producto(inputNombre.value, precioCompra.value, cantidad.value);
+    productos.push(productoUsuario);
+    formulario.reset();
+    console.log(productos);
+}
+
+function agregoProductosTabla() {
+    productos.forEach(productoUsuario => {
+        console.log(productoUsuario);
+    });
+};
+
+agregoProductosTabla();
+
+//let inputNombre = document.getElementById("nombre");
+//console.log(inputNombre);

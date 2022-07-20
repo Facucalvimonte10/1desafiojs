@@ -2,3 +2,24 @@
     background-color: black;
     text-align: center;
     color: white; }
+
+.fondo{
+    background-color: black;
+    color: azure;
+    padding: 5px;
+}
+
+.containerCarrito{
+    width: 100%;
+    margin: 10px;
+}
+
+.subtituloCarrito{
+    text-align: center;
+}
+
+.productos{
+    display: inline-block;
+    margin: 10px;
+}
+

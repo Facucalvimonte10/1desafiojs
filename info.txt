@@ -11,6 +11,10 @@ arrays y me devuelva la totalidad de estudiantes de la camada 2022. Y al ultimo 
 con un do while pero lo intente de esta manera, donde el profesor o el usuario puede ingresar el nombre del alumno y le consola le devolverá 
 la información completa de ese alumno (nombre, edad y nota).
 
-En la primera pre entrega del proyecto final, con la idea de hacer un ecommerce y vincularlo al trabajo final que tengo ya realizado en 
+//En la primera pre entrega del proyecto final, con la idea de hacer un ecommerce y vincularlo al trabajo final que tengo ya realizado en 
 la cursada de Desarrollo Web, en este arme una especie de carrito con la idea del after que tuvimos, donde a través del ID del producto puedas
 ir sumando al carrito y que los productos aparezcan en el console log.
+
+//Victor, en este desafío que me fui guiando por el after, pude incluir una estructura de html que este vinculada al js a través del DOM y
+mediante eventos que al sumar elemntos del formulario que lo ideal seria que sea un carrito me los vaya mostrando y juntando en la consola.
+
