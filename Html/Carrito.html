@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Proyecto js</title>
     <link rel="stylesheet" href="/Css/estilo.css">
+    <script defer src="/Js/main.js"></script>
 </head>
 <body>
     <header>
@@ -31,42 +32,15 @@
     </header>
     <h1 class="fondo">Indu Indumentaria</h1>
     <h2 class="subtituloCarrito">Arma tu carrito de ropa seleccionada para la compra</h2>
-    <div class="containerCarrito">
-        <div class="productos">
-            <h2>Producto: Campera Coral</h2>
-            <p>Id:100</p>
-            <p>Precio compra: 10000</p>
-            <p>Cateogria: Urbano</p>
-            <button> Agregar al Carro</button>
-          </div>
-          <div class="productos">
-            <h2>Producto: Conjunto de Invierno</h2>
-            <p>Id:101</p>
-            <p>Precio compra: 15000</p>
-            <p>Cateogria: Urbano</p>
-            <button> Agregar al Carro</button>
-          </div>
-          <div class="productos">
-            <h2>Producto: Conjunto de Otoño</h2>
-            <p>Id:102</p>
-            <p>Precio compra: 3000</p>
-            <p>Cateogria: Urbano</p>
-            <button> Agregar al Carro</button>
-          </div>
-          <div class="productos">
-            <h2>Producto: Conjunto Elegante</h2>
-            <p>Id:103</p>
-            <p>Precio: 4000</p>
-            <p>Cateogria: Fiesta</p>
-            <button> Agregar al Carro</button>
-          </div>
-          <div class="productos">
-            <h2>Producto: Conjunto Top Invierno</h2>
-            <p>Id:104</p>
-            <p>Precio: 5000</p>
-            <p>Cateogria: Fiesta</p>
-            <button> Agregar al Carro</button>
-          </div>
+    <div class="contenedor">
+        <h2>Productos en stock</h2>
+        <div id="divProductos">Productos</div>
+        <br>
+        <br>
+        <br>
+        <h2>Productos en carro</h2>
+        <div id="divProductosEnCarro">Productos en carro</div>
+   </div>
         </div>
         <div class="container">
             <div class="row">
@@ -110,29 +84,15 @@
             </div>
         </div>
         <div>
-            <table class="table">
+            <table id="tabla">
                 <thead>
                     <tr>
                         <th>Producto</th>
-                        <th>Cantidad</th>
                         <th>Precio</th>
+                        <th>Cantidad</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                    
-                    </tr>
-                    <tr>
-                    
-                    </tr>
-                    <tr>
-            
-                    </tr>
-                </tbody>
-            </table>
         </div>
-    <script src="/Js/main.js"></script>
-
     <footer>
         <div class="estiloFooter">
             Copyright © 2022 Facundo Calvimonte.

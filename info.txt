@@ -16,5 +16,6 @@ la cursada de Desarrollo Web, en este arme una especie de carrito con la idea de
 ir sumando al carrito y que los productos aparezcan en el console log.
 
 //Victor, en este desafío que me fui guiando por el after, pude incluir una estructura de html que este vinculada al js a través del DOM y
-mediante eventos que al sumar elemntos del formulario que lo ideal seria que sea un carrito me los vaya mostrando y juntando en la consola.
+mediante eventos, que le permita al usuario simular su compra en un carrito y a los productos que pushee el usuario, 
+me los vaya mostrando y juntando en la consola.
 

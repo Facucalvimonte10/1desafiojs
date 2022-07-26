@@ -137,24 +137,113 @@ while (categoria != "salir" && categoria != null){
 
         console.log(productosParaCarro);
     }
-}*/
+}
 
+//Variables creadas y array vacio
 
 let productos = [];
 let formulario;
 let inputNombre;
 let precioCompra;
 let cantidad;
+let ProductosEnCarrito;*/
+
+//OBJETO CONSTRUCTOR 
 
 class Producto{
-    constructor(nombre, precioCompra, cantidad){
+    constructor(id, nombre, categoria, precio){
+        this.id = id;
         this.nombre = nombre;
-        this.precio = precioCompra;
-        this.cantidad = cantidad;
+        this.categoria = categoria;
+        this.precio = precio;
+        
     }
 }
 
-function inicializarElementos(){
+//ARRAY DE OBJETOS
+let stockProductos = [
+    {id: 050, nombre:'Campera coral', categoria:'Urbano', precio: 5000},
+    {id: 060, nombre:'Conjunto de invierno',categoria:'Urbano', precio: 4500},
+    {id: 070, nombre:'Conjunto de otoño',categoria:'Urbano', precio: 6000},
+    {id: 080, nombre:'Conjunto elegante',categoria:'Fiesta', precio: 5500},
+    {id: 090, nombre:'Conjunto top invierno',categoria:'Fiesta', precio: 6200},
+];
+
+let productoEnCarro = [];
+
+//FUNCION PARA AGREGAR AL CARRO
+
+function agregarAlCarro(objetoProducto){
+    productoEnCarro.push(objetoProducto);
+    pintarCarro();
+
+}
+//FUNCION PARA QUITAR DEL CARRO
+
+function quitarDelCarro(id){
+    productoEnCarro.splice(id, 1);
+    pintarCarro();
+}
+
+//FUNCION PARA PINTAR EL DOM
+
+
+function pintarStock( ){
+    let aux= '';
+    for (let i=0; i < stockProductos.length; i++) {
+
+        aux = 
+        aux + 
+        `<div onclick= "agregarAlCarro({id: '${stockProductos[i].id}', nombre: '${stockProductos[i].nombre}', precio: '${stockProductos[i].precio}'})" style="border: 2px solid black;";>
+
+                <p>Id Producto: ${stockProductos[i].id}</p>
+                <h3>${stockProductos[i].nombre}</h3>
+                <p>Categoria: ${stockProductos[i].categoria}</p>
+                <p>$ ${stockProductos[i].precio}</p>
+                <button type="submit"> Agregar al Carro</button>
+        
+                    </div>`;
+    }
+
+    //VINCULAR JS A DOM 
+
+    document.getElementById('divProductos').innerHTML = aux;
+}
+
+pintarStock();
+
+function pintarCarro(){
+    let aux= '';
+    for (let i=0; i < productoEnCarro.length; i++) {
+
+        aux = 
+        aux + 
+        `<div" style="border: 2px solid yellow;";>
+
+                <p>Id Producto: ${productoEnCarro[i].id}</p>
+                <h3>${productoEnCarro[i].nombre}</h3>
+                <p>$ ${productoEnCarro[i].precio}</p>
+                <button onclik= "quitarDelCarro(${i})"> Quitar </button>
+        
+                    </div>`;
+    }
+
+    document.getElementById('divProductosEnCarro').innerHTML = aux;
+}
+
+    
+
+
+//VINCULAR JS A DOM 
+
+//EVENTOS
+
+
+
+
+
+
+ /*function inicializarElementos(){
     formulario = document.getElementById("formulario");
     inputNombre = document.getElementById("nombre");
     precioCompra = document.getElementById("precioCompra");
@@ -169,17 +258,41 @@ formulario.onsubmit = (e) => {
     e.preventDefault();
     let productoUsuario = new Producto(inputNombre.value, precioCompra.value, cantidad.value);
     productos.push(productoUsuario);
-    formulario.reset();
-    console.log(productos);
+    agregoProductosTabla();
+    formulario.reset(); 
+    }
+    
+    //Agrego producto a tabla
+function agregoProductosTabla(){
+productos.forEach(productoUsuario => {
+let tabla = document.getElementById("tabla")
+let productosEnCarrito = document.createElement("div")
+
+productosEnCarrito.innerHTML =`
+<img src=>
+<h3>${inputNombre.value}</h3>
+<p>${precioCompra.value}</p>
+<p>${cantidad.value}</p>
+<button>Quitar</button>
+
+`
 }
 
-function agregoProductosTabla() {
-    productos.forEach(productoUsuario => {
-        console.log(productoUsuario);
-    });
-};
+tabla.append(productosEnCarrito);
+//Agrego producto a tabla
+function agregoProductosTabla(){
+productos.forEach(productoUsuario => {
+let tabla = document.getElementById("tabla")
+let productosEnCarrito = document.createElement("div")
 
-agregoProductosTabla();
+productosEnCarrito.innerHTML =`
+<img src=>
+<h3>${inputNombre.value}</h3>
+<p>${precioCompra.value}</p>
+<p>${cantidad.value}</p>
+<button>Quitar</button>
 
-//let inputNombre = document.getElementById("nombre");
-//console.log(inputNombre);
+`
+tabla.append(productosEnCarrito);
+ }     
+});*/
